@@ -7,6 +7,8 @@ tags: [ news ]
 
 Welcome to the website. We're still working on it.
 
+<!-- truncate -->
+
 The website includes a news section, where club members can share news about the group; e.g. joining the US-RSE,
 securing funding, announcing an event.
 

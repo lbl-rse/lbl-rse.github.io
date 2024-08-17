@@ -7,6 +7,8 @@ tags: [ journal ]
 
 We're building a website using Docusaurus.
 
+<!-- truncate -->
+
 The website includes an engineering journal. In it, we can embed code snippets having highlighted portions, like this:
 
 ```py {7-8}
