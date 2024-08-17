@@ -29,9 +29,6 @@ The website is hosted on [GitHub Pages](https://pages.github.com/).
     * [Favicon](#favicon)
     * [Image sources](#image-sources)
 * [Publishing](#publishing)
-  * [Generate a build](#generate-a-build)
-  * [Test the build](#test-the-build)
-  * [Deploy the bundle](#deploy-the-bundle)
 <!-- TOC -->
 
 # Contributing
@@ -163,26 +160,8 @@ In addition, we expect to—at some point—obtain images from these other sourc
 
 # Publishing
 
-Once you've made the changes you want, here's how you can publish them to the Internet.
+Once you've made the changes you want locally, push the branch up to GitHub, create a PR, and request some reviews.
 
-## Generate a build
-
-Generate a production-ready build of the website. The resulting build will be in the directory named `build`.
-
-```shell
-npm run build
-```
-
-## Test the build
-
-Confirm the build looks and behaves the way you want it to.
-
-```shell
-npm run serve
-```
-
-## Deploy the bundle
-
-// TODO
-
-Reference: https://docusaurus.io/docs/deployment#deploying-to-github-pages
+Once the branch gets merged into `main`, a GitHub Actions workflow will automatically generate a production build
+of the website and deploy it to GitHub Pages.
+That GitHub Actions workflow is defined in the file, `.github/workflows.deploy.yaml`. 
