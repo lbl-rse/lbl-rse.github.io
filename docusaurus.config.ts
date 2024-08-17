@@ -38,7 +38,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/lbl-rse/lbl-rse.github.io',
+            'https://github.com/lbl-rse/lbl-rse.github.io/blob/main',
         },
         blog: {
           showReadingTime: true,
@@ -49,7 +49,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/lbl-rse/lbl-rse.github.io',
+            'https://github.com/lbl-rse/lbl-rse.github.io/blob/main',
         },
         theme: {
           customCss: './src/css/custom.css',
