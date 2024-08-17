@@ -1,0 +1,51 @@
+# Reference: https://vitejs.dev/guide/static-deploy#github-pages
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+# Reference: https://github.com/actions/deploy-pages
+permissions:
+  pages: write
+  id-token: write
+
+# Reference: https://docs.github.com/en/actions/using-jobs/using-concurrency
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install NPM dependencies
+        run: npm ci
+
+      - name: Build distributable app
+        run: npm run build
+
+      # Reference: https://github.com/actions/upload-pages-artifact
+      - name: Upload distributable app
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      # Reference: https://github.com/actions/deploy-pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
