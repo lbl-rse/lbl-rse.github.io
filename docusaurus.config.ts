@@ -94,7 +94,7 @@ const config: Config = {
           items: [
             {
               label: 'About',
-              to: '/docs/About',
+              to: '/docs/About/overview',
               title: 'An overview of the group',
             },
             {
@@ -109,7 +109,7 @@ const config: Config = {
             },
             {
               label: 'Roadmap',
-              to: '/roadmap',
+              to: '/docs/About/roadmap',
               title: "Plans for the future",
             },
           ],
