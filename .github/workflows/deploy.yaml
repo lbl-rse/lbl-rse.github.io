@@ -43,7 +43,7 @@ jobs:
       - name: Upload distributable app
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: build
 
       # Reference: https://github.com/actions/deploy-pages
       - name: Deploy to GitHub Pages
