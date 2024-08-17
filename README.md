@@ -4,8 +4,11 @@ This repository contains the source code and content of the [LBL-RSE website](ht
 The website is built using [Docusaurus](https://docusaurus.io/), a static website generator.
 The website is hosted on [GitHub Pages](https://pages.github.com/).
 
+# Table of contents
+
 <!-- TOC -->
 * [lbl-rse.github.io](#lbl-rsegithubio)
+* [Table of contents](#table-of-contents)
 * [Contributing](#contributing)
   * [Local development](#local-development)
     * [Prerequisites](#prerequisites)
