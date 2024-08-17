@@ -160,8 +160,9 @@ In addition, we expect to—at some point—obtain images from these other sourc
 
 # Publishing
 
-Once you've made the changes you want locally, push the branch up to GitHub, create a PR, and request some reviews.
+Once you've made the changes you want locally, you can push the branch up to GitHub, create a Pull Request (PR),
+and request some reviews of the PR.
 
-Once the branch gets merged into `main`, a GitHub Actions workflow will automatically generate a production build
-of the website and deploy it to GitHub Pages.
+Once the branch eventually gets merged into `main`, a GitHub Actions workflow will automatically generate a
+production build of the website and deploy it to GitHub Pages.
 That GitHub Actions workflow is defined in the file, `.github/workflows.deploy.yaml`. 
