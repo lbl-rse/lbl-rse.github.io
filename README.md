@@ -165,4 +165,4 @@ and request some reviews of the PR.
 
 Once the branch eventually gets merged into `main`, a GitHub Actions workflow will automatically generate a
 production build of the website and deploy it to GitHub Pages.
-That GitHub Actions workflow is defined in the file, `.github/workflows.deploy.yaml`. 
+That GitHub Actions workflow is defined in the file, `.github/workflows/deploy.yaml`. 
