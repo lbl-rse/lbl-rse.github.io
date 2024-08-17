@@ -10,32 +10,40 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Who we are',
+    Svg: require('@site/static/img/undraw_collaborators_re_hont.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        We are people who work at Berkeley Lab that are interested in streamlining collaboration between
+        software engineers and researchers.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'What we do',
+    Svg: require('@site/static/img/undraw_community_re_cyrm.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        We meet virtually once per quarter to share our practical experience with one another and support each other's
+        professional development.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'How to join',
+    Svg: require('@site/static/img/undraw_join_re_w1lh.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        You can join us by adding your <samp>lbl.gov</samp> account to both
+          our <a
+            href={"https://groups.google.com/a/lbl.gov/g/lbl-rse/about"}
+            target={"_blank"}
+            className={"text--semibold"}>Google Group</a> and
+          our <a
+            href={"https://lbl-rse.slack.com/"}
+            target={"_blank"}
+            className={"text--semibold"}>Slack workspace</a>.
+          It's a completely self-service process.
       </>
     ),
   },

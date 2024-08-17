@@ -1,16 +1,15 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+news:
+  label: News
+  permalink: /news
+  description: >
+    Posts tagged with "News" make up our News archive, where
+    group members write about group-level events for future
+    reference by current and prospective members.
+journal:
+  label: Journal
+  permalink: /journal
+  description: >
+    Posts tagged with "Journal" make up our Engineering Journal,
+    where our members write about situations they've been in as
+    an RSE, including challenges they faced—whether technical or
+    not—and (if applicable) how they overcame them.

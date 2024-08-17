@@ -1,25 +1,5 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
-
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
-  socials:
-    x: yangshunz
-    github: yangshun
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-  socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+ernest_o_lawrence:
+  name: Ernest O. Lawrence
+  title: Physicist, Founder, ex-UCB, ex-Manhattan Project
+  url: https://en.wikipedia.org/wiki/Ernest_Lawrence
+  image_url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGYVDq_gl60go_L7zLJGjgAkU1JuRibvk9sQ&s

@@ -1,0 +1,41 @@
+---
+sidebar_position: 2
+---
+
+# Members
+
+<!--
+Note: This is the implementation of a React component.
+      The MDX file format combines React and Markdown. It can come in
+      handy for adding interactivity to a page and avoiding tedious
+      repetition of Markdown or HTML snippets.
+      Reference: https://docusaurus.io/docs/markdown-features/react
+-->
+export const Member = ({name, role, avatarUrl}) => (
+    <div style={{display: "inline-block", marginRight: 8, marginBottom: 24, maxWidth: 150, verticalAlign: "top"}}>
+        <div
+            style={{
+                backgroundImage: `url(${avatarUrl})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPositionY: "center",
+                height: 150,
+                width: 150,
+            }}
+        />
+        <div className={"text--semibold"}>{name}</div>
+        <div><small>{role}</small></div>
+    </div>
+);
+
+<Member name={"Alice Avocado"}
+        avatarUrl={"https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2"}
+        role={"Advanced Light Source operator"}/>
+
+<Member name={"Bobby Banana"}
+        avatarUrl={"https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"}
+        role={"Bioinformaticist"}/>
+
+<Member name={"Cindy Calamari"}
+        avatarUrl={"https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"}
+        role={"Computer programmer"}/>

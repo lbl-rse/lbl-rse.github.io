@@ -3,20 +3,20 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'LBL-RSE',
+  tagline: 'Research Software Engineer group at Lawrence Berkeley National Laboratory',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://lbl-rse.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'lbl-rse', // Usually your GitHub org/user name.
+  projectName: 'lbl-rse.github.io', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -38,7 +38,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/lbl-rse/lbl-rse.github.io',
         },
         blog: {
           showReadingTime: true,
@@ -49,7 +49,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/lbl-rse/lbl-rse.github.io',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -60,24 +60,28 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    // image: '',
+    // Configure the navbar, which is implemented as part of the theme.
+    // Reference: https://docusaurus.io/docs/api/themes/configuration#navbar
     navbar: {
-      title: 'My Site',
+      title: 'LBL-RSE',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'LBL-RSE',
         src: 'img/logo.svg',
       },
+      hideOnScroll: true,
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'About',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog/tags/news', label: 'News', position: 'left'},
+        {to: '/blog/tags/journal', label: 'Journal', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://us-rse.org/',
+          label: 'US-RSE',
           position: 'right',
         },
       ],
@@ -86,52 +90,97 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'About',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'About',
+              to: '/docs/About',
+              title: 'An overview of the group',
+            },
+            {
+              label: 'News',
+              to: '/blog/tags/news',
+              title: "Changes to the group",
+            },
+            {
+              label: 'Journal',
+              to: '/blog/tags/journal',
+              title: 'Engineering journal',
+            },
+            {
+              label: 'Roadmap',
+              to: '/roadmap',
+              title: "Plans for the future",
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Connect',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Lightning Talks',
+              href: 'https://sites.google.com/lbl.gov/lightningtalkslunch',
+              title: 'Presentations given by our members',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Google Group',
+              href: 'https://groups.google.com/a/lbl.gov/g/lbl-rse/about',
+              title: 'Our Google Group',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/lbl-rse',
+              title: 'Our GitHub organization',
+            },
+            {
+              label: 'Slack',
+              href: 'https://lbl-rse.slack.com',
+              title: 'Our Slack workspace',
+            },
+          ],
+        },
+        {
+          title: 'Resources',
+          items: [
+            {
+              label: 'Berkeley Lab (LBL)',
+              href: 'https://lbl.gov',
+              title: 'Lawrence Berkeley National Laboratory',
+            },
+            {
+              label: 'US-RSE',
+              href: 'https://us-rse.org/',
+              title: 'United States Research Software Engineer Association',
+            },
+            {
+              label: 'Press',
+              href: 'https://crd.lbl.gov/news-and-publications/news/2024/us-rse-works-to-bring-research-software-engineers-into-the-spotlight/',
+              title: 'LBL-RSE in the news',
+            },
+            {
+              label: 'Jobs',
+              href: 'https://jobs.lbl.gov/jobs/search/5751125',
+              title: 'Software jobs at Berkeley Lab',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Lawrence Berkeley National Laboratory`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    // Reference: https://docusaurus.io/docs/using-plugins
+    plugins: [],
+    // Reference: https://docusaurus.io/docs/configuration#custom-configurations
+    customFields: {},
   } satisfies Preset.ThemeConfig,
+  // Reference: https://docusaurus.io/docs/markdown-features/diagrams
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
 };
 
 export default config;

@@ -13,15 +13,17 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          Research Software Engineers
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+        <p className="hero__subtitle">
+          <span>
+            at Berkeley Lab
+          </span>
+        </p>
+        <div>
+          <a href={"/docs/About/overview"} className={clsx('button button--secondary button--lg', styles.heroButton)}>
+            Learn more
+          </a>
         </div>
       </div>
     </header>
@@ -31,13 +33,20 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
+      <span className={"home-page-wrapper"}>
+        <Layout
+          // Content for <title>...</title> tag
+          title={siteConfig.title}
+          // Content for <meta name="description" content="..." /> tag
+          description={"Research Software Engineer group at Lawrence Berkeley National Laboratory"}
+          // Custom class name we can use to style this component
+          wrapperClassName={"index__layout"}
+        >
+          <HomepageHeader />
+            <main>
+          <HomepageFeatures />
+        </main>
+      </Layout>
+    </span>
   );
 }

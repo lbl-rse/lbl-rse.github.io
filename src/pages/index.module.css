@@ -21,3 +21,10 @@
   align-items: center;
   justify-content: center;
 }
+
+/* This applies some "dark mode" styling to the button in the hero area. */
+[data-theme='dark'] .heroButton {
+  border-color: var(--ifm-hero-text-color);
+  background-color: var(--ifm-hero-text-color);
+  color: var(--ifm-hero-background-color);
+}
