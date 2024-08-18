@@ -6,6 +6,8 @@ The website is hosted on [GitHub Pages](https://pages.github.com/).
 
 # Table of contents
 
+<!-- prettier-ignore-start -->
+
 <!-- TOC -->
 * [lbl-rse.github.io](#lbl-rsegithubio)
 * [Table of contents](#table-of-contents)
@@ -30,6 +32,8 @@ The website is hosted on [GitHub Pages](https://pages.github.com/).
     * [Image sources](#image-sources)
 * [Publishing](#publishing)
 <!-- TOC -->
+
+<!-- prettier-ignore-end -->
 
 # Contributing
 
@@ -102,7 +106,7 @@ is a snippet of metadata about the page. Many Markdown files in this repository 
 ### About > Members (`/docs/About/members`)
 
 You can edit this page by editing the file, `docs/About/members.mdx`. This is an [MDX](https://mdxjs.com/) file, which
-is a type of file that can contain both Markdown and [JSX](https://en.wikipedia.org/wiki/JSX_(JavaScript)). JSX is the
+is a type of file that can contain both Markdown and [JSX](<https://en.wikipedia.org/wiki/JSX_(JavaScript)>). JSX is the
 file format in which React user interface elements are typically implemented.
 
 ### About > Roadmap (`/docs/About/roadmap`)
@@ -192,4 +196,4 @@ and request some reviews of the PR.
 
 Once the branch eventually gets merged into `main`, a GitHub Actions workflow will automatically generate a
 production build of the website and deploy it to GitHub Pages.
-That GitHub Actions workflow is defined in the file, `.github/workflows/deploy.yaml`. 
+That GitHub Actions workflow is defined in the file, `.github/workflows/deploy.yaml`.

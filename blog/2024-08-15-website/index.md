@@ -1,8 +1,8 @@
 ---
 slug: website
 title: Website
-authors: [ ernest_o_lawrence ]
-tags: [ journal ]
+authors: [ernest_o_lawrence]
+tags: [journal]
 ---
 
 We're building a website using Docusaurus.

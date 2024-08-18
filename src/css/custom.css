@@ -18,7 +18,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #b2c1c4;
   --ifm-color-primary-dark: #9db0b4;
   --ifm-color-primary-darker: #92a7ac;
@@ -29,6 +29,6 @@
 }
 
 /* In dark mode, invert the color of the logo image in the navbar. */
-[data-theme='dark'] .navbar__logo > img {
-  filter: invert(1.0);
+[data-theme="dark"] .navbar__logo > img {
+  filter: invert(1);
 }
