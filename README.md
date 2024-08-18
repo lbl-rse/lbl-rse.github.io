@@ -26,7 +26,7 @@ The website is hosted on [GitHub Pages](https://pages.github.com/).
       * [Light mode](#light-mode)
       * [Dark mode](#dark-mode)
   * [Images](#images)
-    * [Favicon](#favicon)
+    * [Logo](#logo)
     * [Image sources](#image-sources)
 * [Publishing](#publishing)
 <!-- TOC -->
@@ -137,9 +137,21 @@ which generated a dark mode color palette as a set of CSS style rules.
 
 ## Images
 
-### Favicon
+### Logo
 
-// TODO
+Our logo is the [users](https://fontawesome.com/icons/users?f=classic&s=solid) icon
+from the Font Awesome Free icon set. ([License](https://fontawesome.com/license/free))
+
+To customize and download it, we found it on [fonticon](https://gauger.io/fonticon/),
+set its foreground color to `#00313C` there, selected the download type of `.ico (advanced)`,
+then clicked the "Download" button.
+That opened the icon in [RealFaviconGenerator.net](https://realfavicongenerator.net/api/favicon_generator),
+in which we opted for a background color of `#FFFFFF`. Finally, we downloaded the resulting favicon package
+(i.e. ZIP file), which included:
+
+- `favicon.ico`, which we use as our **favicon** (i.e. `static/img/favicon.ico`)
+- `safari-pinned-tab.svg`, which we renamed to `logo.svg` and use as our **logo** (i.e. `static/img/logo.svg`)
+- Other files, which we do not use
 
 ### Image sources
 
