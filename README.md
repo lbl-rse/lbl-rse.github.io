@@ -58,7 +58,22 @@ That will launch a local development server and open the website in a web browse
 
 ## Code style
 
-// TODO
+We use [Prettier](https://prettier.io/) to ensure the code in this repository is in a standard style,
+regardless of who wrote the code.
+
+To check whether the code in this repository is in that style, you can run:
+
+```shell
+npx prettier . --check
+```
+
+If Prettier detects any style issues, it will prompt you to fix the issues by running:
+
+```shell
+npx prettier . --write
+```
+
+Prettier can check/format files of several types, including: `.md`, `.mdx`, `.js`, `.jsx`, `.ts`, `.tsx`, and `.css`.
 
 ## Content
 
