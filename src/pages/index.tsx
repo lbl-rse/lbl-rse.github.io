@@ -37,22 +37,20 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <span className={"home-page-wrapper"}>
-      <Layout
-        // Content for <title>...</title> tag
-        title={siteConfig.title}
-        // Content for <meta name="description" content="..." /> tag
-        description={
-          "Research Software Engineer group at Lawrence Berkeley National Laboratory"
-        }
-        // Custom class name we can use to style this component
-        wrapperClassName={"index__layout"}
-      >
-        <HomepageHeader />
-        <main>
-          <HomepageFeatures />
-        </main>
-      </Layout>
-    </span>
+    <Layout
+      // Content for <title>...</title> tag
+      title={siteConfig.title}
+      // Content for <meta name="description" content="..." /> tag
+      description={
+        "Research Software Engineer group at Lawrence Berkeley National Laboratory"
+      }
+      // Custom class name we can use to style this component
+      wrapperClassName={"index__layout"}
+    >
+      <HomepageHeader />
+      <main>
+        <HomepageFeatures />
+      </main>
+    </Layout>
   );
 }
